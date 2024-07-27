@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './App.css'; // Import the CSS file
 
 // Sample data with prices
 const items = [
@@ -27,7 +28,7 @@ const FilterSearch = () => {
   );
 
   return (
-    <div>
+    <div className="filter-search-container">
       <h1>Filter Search</h1>
       <input
         type="text"
@@ -43,7 +44,7 @@ const FilterSearch = () => {
             </li>
           ))
         ) : (
-          <li>No items found</li>
+          <li className="no-items">No items found</li>
         )}
       </ul>
     </div>
